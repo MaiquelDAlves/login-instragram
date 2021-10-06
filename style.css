@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+.container--principal {
+    display: flex;
+}
+.container--L {
+    flex: 1;
+}
+.container--phones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container--phones img {
+    max-width: 454px;
+    height: 700px;
+}
+
+.container--R {
+    flex: 1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.container2 {
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+    max-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0; 
+    border-radius: 2px;
+}
+.logo img{
+    max-width: 175px;
+    height: 51px;
+    margin-bottom: 20px;
+}
+.photo--perfil img{
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.container2 a {
+    text-decoration: none;
+}
+.btn {
+    height: 37px;
+    margin-bottom: 20px;
+}
+.container2 .btn .botao {
+    color: #FFF;
+    background-color: #0095F6;
+    padding: 6px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.troca--conta {
+    font-size: 14px;
+}
+.troca--conta a {
+    color: #0095F6;
+    font-weight: 600;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+footer ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer ul li{
+    list-style: none;
+    padding:2px 10px;
+}
+.final {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.final a {
+    text-decoration: none;
+    color: #8e8e8e;
+    margin-right: 10px;
+}
+.seta-baixo:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+  
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #8e8e8e;
+  }
+
+  @media (max-width: 839px) {
+
+    .container--L {
+        display: none;
+    }
+    .container {
+        flex-direction: row;
+        padding: 30px;
+        
+    }
+    .container2 {
+        padding: 20px 50px;
+        margin-top: 50px;
+    }
+
+    footer {
+        margin-top: 50px;
+       
+    } 
+  }
+  @media (max-width:450px) {
+      .container2 {
+          margin-top: 0px;
+          background-color: #FAFAFA;
+          border: none;
+          padding: 0;
+      }
+      footer {
+        margin-top: 80px;
+       
+    } 
+  }
